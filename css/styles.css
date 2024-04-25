@@ -1,0 +1,220 @@
+body {
+    color: white;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 10%;
+}
+
+/* Sections */
+
+.colored-section {
+    background-color: #401F71;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+    color: #000000;
+}
+
+/* Headings */
+
+.big-heading {
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    line-height: 1.5;
+}
+
+.heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Title Section */ 
+
+#title {
+    background: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Sets the height of the section to 100% of the viewport height */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+}
+
+#title .container-fluid {
+    padding: 2% 10%;
+}
+
+#title .introduction .heading {
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.copy {
+    text-decoration: underline;
+}
+
+/* Portfolio */
+
+#portfolio .card {
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* About */
+
+.profile-picture {
+    width: 300px;
+    margin-bottom: 25px;
+}
+
+#about .heading {
+    font-style: italic;
+}
+
+#about .lead {
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Services Section */
+
+#services {
+    padding: 100px;
+}
+
+#services .card {
+    margin: 0 auto;
+    text-align: left;
+}
+
+#services .card-title {
+    margin-bottom: 20px;
+}
+
+.service-column {
+    padding: 3% 2%;
+}
+
+/* Call to Action */
+
+#cta .cta-heading {
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    margin: 4% 0 0 4%;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222831;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+  }
+  
+  .scroll-to-top.active {
+    display: block; 
+  }
+  
+
+/* Footer Section */
+
+.social-icon {
+    font-size: 1.2rem;
+    margin: 20px 10px;
+}
+
+@media screen and (max-width: 1028px) {
+    .big-heading {
+        font-size: 4rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }    
+
+    #title .introduction .heading {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }   
+
+    #services {
+        padding: 70px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .big-heading {
+        font-size: 3.5rem;
+    } 
+
+    .heading {
+        font-size: 1.5rem;
+    } 
+
+    #title .introduction .heading {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    #services {
+        padding: 50px;
+    }
+}
